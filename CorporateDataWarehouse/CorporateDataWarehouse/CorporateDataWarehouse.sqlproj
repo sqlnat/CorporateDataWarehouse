@@ -57,8 +57,13 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Deploy" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dimCurrency.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Deploy\Deploy.bat" />
+    <None Include="Deploy\PsExec.exe" />
   </ItemGroup>
 </Project>
